@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default: "pt-BR" }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="{{ title | default: metadata.title }}" />
+    <meta name="description" content="{{ summary | default: metadata.description }}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:title" content="{{ title | default: metadata.title }}" />
+    <meta
+      property="og:description"
+      content="{{ summary | default: metadata.description }}"
+    />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/3859329" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="@peruibeloko" />
+    <meta property="twitter:url" content="{{ page.url }}" />
+    <meta property="twitter:title" content="{{ title | default: metadata.title }}" />
+    <meta
+      property="twitter:description"
+      content="{{ summary | default: metadata.description }}"
+    />
+    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/3859329" />
+    <link rel="icon" href="https://emoji.gg/assets/emoji/thonk.png" />
+    <link rel="stylesheet" href="/splendor.css">
+    <title>{{ title | default: 'Peru' }}</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>{{ title | default: metadata.title }}</h1>
+    </header>
+    <main>{{ content }}</main>
+    <footer>
+      <a href="/">Home</a>
+    </footer>
+  </body>
+</html>
