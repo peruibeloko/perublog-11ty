@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: blog
 ---
 
 {% for post in collections.post %}

@@ -1,0 +1,150 @@
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header h1 {
+  font-family: var(--sans-serif-title);
+  font-size: 4rem;
+  border-left: 7px solid var(--main-color);
+  padding-left: 1rem;
+}
+
+header h2 {
+  color: var(--gray);
+  font-family: var(--sans-serif-regular);
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70rem;
+}
+
+img {
+  width: 20rem;
+  border-radius: 3rem;
+  border: 3px var(--main-color) solid;
+}
+
+article {
+  width: 60%;
+  padding: 2rem;
+  background-color: var(--black);
+  border: 3px var(--gray) solid;
+  border-radius: 3rem;
+}
+
+p {
+  font-family: var(--serif-regular);
+  line-height: 1.7;
+  margin: 1rem 0;
+}
+
+p::first-letter {
+  font-size: 1.4rem;
+  line-height: 1rem;
+}
+
+main,
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+nav {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+nav a {
+  font-family: var(--sans-serif-title);
+  font-size: 2.5rem;
+}
+
+nav a:first-of-type {
+  margin-bottom: 3rem;
+}
+
+nav a::before {
+  content: '>';
+  color: var(--main-color);
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  main,
+  header {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  article {
+    width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  header {
+    margin: 2rem 0;
+    align-items: center;
+  }
+
+  header h1 {
+    font-family: var(--sans-serif-title);
+    font-size: 3rem;
+    border-left: none;
+    border-bottom: 3px solid var(--main-color);
+    padding-left: 0;
+  }
+
+  header h2 {
+    color: var(--gray);
+    font-family: var(--sans-serif-regular);
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    width: 100%;
+    margin: 3rem 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  nav a {
+    border-bottom: 3px solid var(--main-color);
+  }
+
+  nav a:first-of-type {
+    margin-bottom: 0rem;
+  }
+
+  nav a::before {
+    content: '';
+    margin-right: 0;
+  }
+}

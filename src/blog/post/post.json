@@ -1,4 +1,5 @@
 {
-  "layout": "main.html",
-  "tags": "post"
+  "layout": "blog.html",
+  "tags": "post",
+  "styles": "blog"
 }
