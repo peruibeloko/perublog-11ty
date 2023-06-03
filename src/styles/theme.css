@@ -1,15 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Noto+Serif&family=PT+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@700&display=swap');
 
 :root {
-  --sans-serif-title: 'Fira Sans', sans-serif;
-  --sans-serif-regular: 'PT Sans', sans-serif;
-  --serif-regular: 'Noto Serif', serif;
-  --main-color: #cc241d;
-  --black: #1d2021;
-  --dark-gray: #282828;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Noto Sans', sans-serif;
+  --serif: 'Noto Serif', serif;
+  --slab: 'Roboto Slab', serif;
+
+  --bg_h: #1d2021;
+  --bg: #282828;
+  --bg_s: #32302f;
+  --bg1: #3c3836;
+  --bg2: #504945;
+  --bg3: #665c54;
+  --bg4: #7c6f64;
+
+  --fg: #fbf1c7;
+  --fg1: #ebdbb2;
+  --fg2: #d5c4a1;
+  --fg3: #bdae93;
+  --fg4: #a89984;
+
+  --red: #fb4934;
+  --green: #b8bb26;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+  --purple: #d3869b;
+  --aqua: #8ec07c;
   --gray: #928374;
-  --light-gray: #d5c4a1;
-  --white: #ebdbb2;
+  --orange: #fe8019;
+
+  --red-dim: #cc2412;
+  --green-dim: #98971a;
+  --yellow-dim: #d79921;
+  --blue-dim: #458588;
+  --purple-dim: #b16286;
+  --aqua-dim: #689d6a;
+  --gray-dim: #a89984;
+  --orange-dim: #d65d0e;
+
+  --main-color: var(--red-dim);
+  --black: var(--bg_h);
+  --dark-gray: var(--bg);
+  --light-gray: var(--fg4);
+  --white: var(--fg);
 }
 
 *,
@@ -22,8 +55,16 @@
   list-style: none;
   background-color: var(--dark-gray);
   color: var(--white);
+  font-weight: normal;
 }
 
 * * {
   background-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  max-width: 70rem;
 }

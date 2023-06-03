@@ -48,6 +48,6 @@ O conjunto de um servidor Express que abriga um bot de Discord, e um aplicativo 
 
 <footer>
 
-[← Voltar](/)
+[Home](/)
 
 </footer>

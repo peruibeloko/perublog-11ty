@@ -11,6 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@types/markdown-it": "^12.2.3",
+    "@types/markdown-it-container": "^2.0.5"
+  },
+  "dependencies": {
+    "markdown-it-container": "^3.0.0"
   }
 }

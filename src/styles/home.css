@@ -5,45 +5,43 @@ header section {
 }
 
 header h1 {
-  font-family: var(--sans-serif-title);
+  font-family: var(--slab);
   font-size: 4rem;
-  border-left: 7px solid var(--main-color);
+  border-left: 10px solid var(--main-color);
   padding-left: 1rem;
 }
 
 header h2 {
   color: var(--gray);
-  font-family: var(--sans-serif-regular);
+  font-family: var(--sans);
   font-weight: normal;
+  font-style: italic;
   font-size: 1.3rem;
   margin-top: 1rem;
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 70rem;
 }
 
 img {
   width: 20rem;
   border-radius: 3rem;
-  border: 3px var(--main-color) solid;
+  border: 1px var(--main-color) solid;
 }
 
 article {
   width: 60%;
   padding: 2rem;
   background-color: var(--black);
-  border: 3px var(--gray) solid;
+  border: 1px var(--gray) solid;
   border-radius: 3rem;
 }
 
 p {
-  font-family: var(--serif-regular);
+  font-family: var(--serif);
   line-height: 1.7;
   margin: 1rem 0;
 }
@@ -51,6 +49,10 @@ p {
 p::first-letter {
   font-size: 1.4rem;
   line-height: 1rem;
+}
+
+p > a {
+  border-bottom: 3px solid var(--main-color);
 }
 
 main,
@@ -71,8 +73,9 @@ nav {
 }
 
 nav a {
-  font-family: var(--sans-serif-title);
+  font-family: var(--sans);
   font-size: 2.5rem;
+  font-family: var(--slab);
 }
 
 nav a:first-of-type {
@@ -82,6 +85,7 @@ nav a:first-of-type {
 nav a::before {
   content: '>';
   color: var(--main-color);
+  font-family: var(--slab);
   margin-right: 0.5rem;
 }
 
@@ -109,7 +113,6 @@ nav a::before {
   }
 
   header h1 {
-    font-family: var(--sans-serif-title);
     font-size: 3rem;
     border-left: none;
     border-bottom: 3px solid var(--main-color);
@@ -118,10 +121,14 @@ nav a::before {
 
   header h2 {
     color: var(--gray);
-    font-family: var(--sans-serif-regular);
+    font-family: var(--sans);
     font-weight: normal;
     font-size: 1.3rem;
     margin-bottom: 1rem;
+  }
+
+  header section {
+    align-items: center;
   }
 
   p {

@@ -28,7 +28,9 @@
     <link rel="icon" href="https://emoji.gg/assets/emoji/thonk.png" />
     <link rel="stylesheet" href="/styles/theme.css">
     <link rel="stylesheet" href="/styles/{{ styles }}.css">
-    <title>{{ title | default: 'Peru' }}</title>
+    <title>{{ title | default: metadata.title }}</title>
   </head>
-  {{ content }}
+  <body>
+    {{ content }}
+  </body>
 </html>
