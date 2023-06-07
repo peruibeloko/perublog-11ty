@@ -7,6 +7,7 @@
     <meta name="title" content="{{ title | default: metadata.title }}" />
     <meta name="description" content="{{ summary | default: metadata.description }}" />
 
+    <!-- BEGIN SOCIAL METADATA -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url }}" />
     <meta property="og:title" content="{{ title | default: metadata.title }}" />
@@ -25,6 +26,9 @@
       content="{{ summary | default: metadata.description }}"
     />
     <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/3859329" />
+    <!-- END SOCIAL METADATA -->
+
+    <link href="/styles/prism-gruvbox-dark.css" rel="stylesheet">
     <link rel="icon" href="https://emoji.gg/assets/emoji/thonk.png" />
     <link rel="stylesheet" href="/styles/theme.css">
     <link rel="stylesheet" href="/styles/{{ styles }}.css">

@@ -7,6 +7,7 @@
     <meta name="title" content="JavaScript — Presente, Passado e Futuro" />
     <meta name="description" content="Transcrição da palestra feita durante o Bragança Tech Day de 2022" />
 
+    <!-- BEGIN SOCIAL METADATA -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/blog/2023/05/21/javascript-presente-passado-e-futuro/" />
     <meta property="og:title" content="JavaScript — Presente, Passado e Futuro" />
@@ -25,6 +26,9 @@
       content="Transcrição da palestra feita durante o Bragança Tech Day de 2022"
     />
     <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/3859329" />
+    <!-- END SOCIAL METADATA -->
+
+    <link href="/styles/prism-gruvbox-dark.css" rel="stylesheet">
     <link rel="icon" href="https://emoji.gg/assets/emoji/thonk.png" />
     <link rel="stylesheet" href="/styles/theme.css">
     <link rel="stylesheet" href="/styles/post.css">
@@ -35,7 +39,7 @@
 <header>
   <h1>JavaScript — Presente, Passado e Futuro</h1>
 </header>
-<main><h2>Quem sou eu?</h2>
+<main><h2 id="quem-sou-eu%3F" tabindex="-1">Quem sou eu? <a class="heading-anchor" href="#quem-sou-eu%3F">🔗</a></h2>
 <ul>
 <li>Carlos Mendonça, 22 anos</li>
 <li>Bacharel em Ciência da Computação pela UAM</li>
@@ -43,21 +47,21 @@
 <li>Apaixonado por matemática, computação e música</li>
 <li>Talvez um pouco obcecado por Linguagens de Programação e Compiladores 👀</li>
 </ul>
-<h2>Estrutura</h2>
+<h2 id="estrutura" tabindex="-1">Estrutura <a class="heading-anchor" href="#estrutura">🔗</a></h2>
 <ol>
 <li>Breve história de como JS surgiu e evoluiu</li>
 <li>ES6 e suas duas principais funcionalidades</li>
 <li>O que compõe o ecossistema atual</li>
 <li>O que o futuro pode trazer</li>
 </ol>
-<h2>Passado — Nascimento e Crescimento</h2>
-<h3>Qual era o contexto da época?</h3>
+<h2 id="passado-%E2%80%94-nascimento-e-crescimento" tabindex="-1">Passado — Nascimento e Crescimento <a class="heading-anchor" href="#passado-%E2%80%94-nascimento-e-crescimento">🔗</a></h2>
+<h3 id="qual-era-o-contexto-da-%C3%A9poca%3F" tabindex="-1">Qual era o contexto da época? <a class="heading-anchor" href="#qual-era-o-contexto-da-%C3%A9poca%3F">🔗</a></h3>
 <p>É 1995 e a internet ainda estava em período de adoção pelo público geral. O primeiro navegador com interface gráfica amplamente utilizado, o Mosaic, tinha sido lançado apenas dois anos atrás. Um grupo dos principais desenvolvedores do Mosaic decidiram fundar a Netscape e criar uma evolução do navegador Mosaic, o Netscape Navigator.</p>
 <p>O Navigator era melhor que o Mosaic, mas a internet ainda não havia mudado. Todo conteúdo da internet ainda era composto de páginas de texto e imagens estáticas, mas havia muito interesse popular para a criação de botões que brilham e pulam na tela.</p>
 <p>A Netscape ouviu esse clamor popular e abriu duas frentes para atender essa demanda: Em uma, tentaram colaborar com a Sun Microsystems, que na época estava desenvolvendo o Java, para colocar Java no navegador. Na outra, eles contrataram Brendan Eich, que pretendia portar a linguagem Scheme para o navegador, que já era uma linguagem conhecida na época e que era relativamente fácil de ser portada devido a sua simplicidade.</p>
 <p>A gerência da Netscape, entretanto, se perguntou se a internet realmente precisava de duas linguagens, e acabaram optando por manter apenas uma. Só que para defender sua iniciativa de usar o JavaScript (que naquela época ainda não tinha esse nome) eles precisavam de um protótipo de uma linguagem de scripting (como o Scheme) que tivesse uma sintaxe diferente (parecida com a do Java)</p>
 <p>Assim, em 10 dias, Brendan Eich projetou a linguagem Mocha em maio de 95, que foi renomeada para LiveScript por motivos legais e incluída no beta do Netscape Navigator 2 no final de novembro com pouquíssimas mudanças desde sua concepção inicial. Em dezembro ocorreu o lançamento oficial do navegador, e o LiveScript foi renomeado para JavaScript como jogada de marketing para surfar na onda que o Java estava criando na época.</p>
-<h3>Os anos seguintes</h3>
+<h3 id="os-anos-seguintes" tabindex="-1">Os anos seguintes <a class="heading-anchor" href="#os-anos-seguintes">🔗</a></h3>
 <ul>
 <li>1995 — No mesmo ano a Microsoft lançou o Internet Explorer, dando início a uma “corrida espacial” entre os dois navegadores</li>
 <li>1996 — No ano seguinte, a Microsoft apresentou o JScript, uma cópia do JavaScript feita por meio de engenharia reversa, além de suporte inicial para CSS e extensões do HTML.
@@ -75,34 +79,34 @@
 <li>2000 — Início dos trabalhos para o ECMAScript 4</li>
 </ul>
 <p>Enquanto isso na Microsoft, o Internet Explorer tinha 95% de controle do mercado de navegadores no começo dos anos 2000, tornando o JScript o padrão efetivamente utilizado para desenvolvimento web. Eles até contribuíram com a criação do padrão ECMAScript no começo, mas abandonaram o projeto, estagnando o desenvolvimento da versão 4 do padrão.</p>
-<h3>Enfim, um novo padrão</h3>
+<h3 id="enfim%2C-um-novo-padr%C3%A3o" tabindex="-1">Enfim, um novo padrão <a class="heading-anchor" href="#enfim%2C-um-novo-padr%C3%A3o">🔗</a></h3>
 <p>É 2005 e o ECMAScript 4 nunca aconteceu por conta da falta de adoção da maior fabricante da época, a Microsoft. Não quer dizer que esforços foram em vão, nesse mesmo tempo algumas tecnologias importantíssimas surgiram como Ajax e Event Listeners, iniciando uma “Era Renascentista” do JavaScript, com a criação de ferramentas como jQuery, Prototype, Dojo Toolkit, e MooTools.</p>
 <p>Em 2008 a Google anunciou seu motor de JavaScript chamado V8, que apresentava uma performance estupidamente melhor que a da concorrência por conta de sua compilação just-in-time.</p>
 <p>Em Julho todas as fabricantes da época (Microsoft, Mozilla, e Google) se reuniram em Oslo para resolver suas disparidades de adoção do padrão e promover a evolução da linguagem. O resultado foi a criação do padrão ECMAScript 5 no início de 2009</p>
-<h2>Presente — ECMAScript 6: Módulos e Promises</h2>
-<h3>E agora, José?</h3>
+<h2 id="presente-%E2%80%94-ecmascript-6%3A-m%C3%B3dulos-e-promises" tabindex="-1">Presente — ECMAScript 6: Módulos e Promises <a class="heading-anchor" href="#presente-%E2%80%94-ecmascript-6%3A-m%C3%B3dulos-e-promises">🔗</a></h2>
+<h3 id="e-agora%2C-jos%C3%A9%3F" tabindex="-1">E agora, José? <a class="heading-anchor" href="#e-agora%2C-jos%C3%A9%3F">🔗</a></h3>
 <p>A linguagem padronizou, a competição acabou, o povo tá contente, a comunidade tá produzindo, e agora, José?</p>
 <p>A linguagem ainda tinha alguns sérios problemas a bom tempo, problemas que ainda impediam que o JS fosse considerada uma linguagem moderna de fato, e o ES6 introduziu muitas correções que estavam pendentes desde 1995, o que explica parte da espera de 7 anos pela especificação.</p>
 <p>O ES6 também introduziu mais funcionalidades do que posso listar aqui, mas algumas das mais expressivas foram funções flecha, classes, variáveis de escopo de bloco, constantes nativas, desestruturação e muitas outras.</p>
 <p>Mas pessoalmente, acredito que as duas maiores mudanças que foram introduzidas foram a criação de Módulos e Promises, pois elas mudam fundamentalmente a forma como nós estruturamos grandes coleções de código fonte e como lidamos com código assíncrono, duas partes fundamentais para a criação de código manutenível e performático.</p>
-<h4>Breve pausa — Manutenibilidade</h4>
+<h4 id="breve-pausa-%E2%80%94-manutenibilidade" tabindex="-1">Breve pausa — Manutenibilidade <a class="heading-anchor" href="#breve-pausa-%E2%80%94-manutenibilidade">🔗</a></h4>
 <p>Manutenibilidade é definida como</p>
 <blockquote>
 <p>uma característica inerente a um projeto de sistema ou produto, e se refere à facilidade, precisão, segurança e economia na execução de ações de manutenção nesse sistema ou produto (BLANCHARD, Benjamin. Logistics engineering and
 management. 4th ed. Englewwod Cliffs: Prentice Hall, 1992. p. 15)</p>
 </blockquote>
-<h3>Módulos</h3>
+<h3 id="m%C3%B3dulos" tabindex="-1">Módulos <a class="heading-anchor" href="#m%C3%B3dulos">🔗</a></h3>
 <p>Toda boa linguagem possui alguma forma de dividir grandes secções de código em parcelas menores com propósito específico, faz parte do princípio SOLID. Antes do ES6, aplicações dependiam ou de arquivos monolíticos com todas as funcionalidades implementadas em um só lugar, ou do uso de bundlers como Webpack, que agrupavam vários arquivos JS em um só, que era servido para o navegador para ser executado.</p>
 <p>Com a introdução de Módulos, programadores agora podem nativamente quebrar uma aplicação em vários pequenos arquivos, cada um exportando uma pequena funcionalidade utilizada para compor o todo.</p>
-<h3>Promises</h3>
+<h3 id="promises" tabindex="-1">Promises <a class="heading-anchor" href="#promises">🔗</a></h3>
 <p>Código assíncrono é um dos pilares de qualquer aplicação web moderna, já que as informações apresentadas para o usuário raramente são armazenadas no navegador e devem ser buscadas em algum tipo de serviço externo por meio de requisições HTTP.</p>
 <p>Essas requisições devem ser realizadas de forma assíncrona para garantir uma boa experiência para o usuário (lembram do Ajax?)</p>
 <p>Até a criação das Promises, o único mecanismo que o JS oferecia para lidar com tal estrutura eram os callbacks, que elevavam a complexidade do código e normalmente levavam a algo chamado “callback hell”, que são pirâmides horizontais de funções aninhadas utilizadas para lidar com sequências intermináveis de chamadas assíncronas.</p>
 <p>Com as Promises essas pirâmides se tornam sequências de chamadas encadeadas, não aninhadas, melhorando a legibilidade e a manutenibilidade do código.</p>
-<h2>Presente — Frameworks e JS Server-side</h2>
+<h2 id="presente-%E2%80%94-frameworks-e-js-server-side" tabindex="-1">Presente — Frameworks e JS Server-side <a class="heading-anchor" href="#presente-%E2%80%94-frameworks-e-js-server-side">🔗</a></h2>
 <p>Promises e Módulos são legais e tudo mais, mas se você se tornar um desenvolvedor JS hoje em dia, dificilmente vai trabalhar exclusivamente com JS nativo e dificilmente vai escrever todas suas funcionalidades do zero. Chances são que você vai utilizar frameworks e bibliotecas prontas para construir suas aplicações, e portanto é importante saber pra que frameworks servem e o que são, e onde encontrar bibliotecas de terceiros.</p>
 <p>Falaremos brevemente de outra aplicação muito comum do JS, o JS server-side, e também de uma linguagem chamada TypeScript, uma “extensão” do JavaScript que oferece tipagem forte e estática muito utilizada no mercado e na comunidade.</p>
-<h3>Frameworks — Pra que servem?</h3>
+<h3 id="frameworks-%E2%80%94-pra-que-servem%3F" tabindex="-1">Frameworks — Pra que servem? <a class="heading-anchor" href="#frameworks-%E2%80%94-pra-que-servem%3F">🔗</a></h3>
 <p>Antes de definir o que é uma framework, quero que vocês entendam qual a necessidade que as frameworks atendem. Dessa forma, quando eu definir do que uma framework é composta, fica claro o porque ela é composta daquilo.</p>
 <p>Suponhamos que você queira fazer um quadrado mudar de cor quando o usuário clicar num botão. Se você usar somente JS nativo ao navegador isso vai requerer bastante trabalho. Você precisa:</p>
 <ul>
@@ -129,7 +133,7 @@ management. 4th ed. Englewwod Cliffs: Prentice Hall, 1992. p. 15)</p>
 <p>No código imperativo o programador deve definir todos os passos que serão executados para que uma tarefa seja concluída, e normalmente é a forma que nós aprendemos a programar nas nossas primeiras aulas de construção de algoritmos.</p>
 <p>Código declarativo, por outro lado, não se importa com as especificidades de como realizar algumas tarefas, e permite que você se concentre mais no objetivo final do que em cada passo individual.</p>
 <p>Tudo que frameworks visam fazer é justamente isso: tornar código mais declarativo te oferecendo mais funcionalidades prontas.</p>
-<h3>Frameworks — O que são?</h3>
+<h3 id="frameworks-%E2%80%94-o-que-s%C3%A3o%3F" tabindex="-1">Frameworks — O que são? <a class="heading-anchor" href="#frameworks-%E2%80%94-o-que-s%C3%A3o%3F">🔗</a></h3>
 <p>Agora que definimos qual o objetivo de uma framework, as funcionalidades que uma framework normalmente oferecem fazem mais sentido:</p>
 <ul>
 <li>Fácil reutilização de código (Componentes)</li>
@@ -138,49 +142,49 @@ management. 4th ed. Englewwod Cliffs: Prentice Hall, 1992. p. 15)</p>
 <li>Valores reativos (Reatividade)</li>
 <li>Gerenciamento de estado global da aplicação (Stores, Contexto)</li>
 </ul>
-<h4>Componentes</h4>
+<h4 id="componentes" tabindex="-1">Componentes <a class="heading-anchor" href="#componentes">🔗</a></h4>
 <p>Uma interface é feita de componentes da mesma forma que uma casa é feita de quartos. Componentização é bem comum nas frameworks modernas, e te permite criar pedaços que você pode reutilizar conforme monta uma interface, ou simplesmente uma forma de quebrar uma interface complexa em pedaços menores e melhor compreendidos, sem a necessidade de reutilização.</p>
-<h4>Stores, Binding e Reatividade</h4>
+<h4 id="stores%2C-binding-e-reatividade" tabindex="-1">Stores, Binding e Reatividade <a class="heading-anchor" href="#stores%2C-binding-e-reatividade">🔗</a></h4>
 <p>As tarefas que o desenvolvedor web mais realiza talvez sejam obter e exibir informação para o usuário. Fazer isso de forma nativa no navegador é bem trabalhoso e requer muito código “boilerplate” (código sem utilidade prática mas que é necessário para o funcionamento da linguagem)</p>
 <p>Ferramentas modernas normalmente oferecem algum tipo de “sistema de reatividade” que te permitem “injetar” valores dinâmicos na construção da interface e sincronizar valores da aplicação com os valores dos campos de entrada do usuário, atualizando a interface em tempo real conforme o estado da aplicação muda e eliminando a necessidade de código boilerplate para interação com o usuário.</p>
-<h4>Single Page Applications ou SPAs</h4>
+<h4 id="single-page-applications-ou-spas" tabindex="-1">Single Page Applications ou SPAs <a class="heading-anchor" href="#single-page-applications-ou-spas">🔗</a></h4>
 <p>Essa é uma tendência moderna na construção de aplicações web: Oferecer uma experiência de “página única” para o usuário. Isto é: O usuário dificilmente muda de página de forma efetiva, o que acontece é uma atualização de estado.</p>
 <p>As diferentes páginas de uma aplicação são construídas como janelas de um mesmo painel, e quando um usuário “navega” para uma nova página o sistema de roteamento do framework só substitui o que está sendo exibido para o usuário, podendo até realizar uma transição suave entre as duas interfaces.</p>
 <p>Dessa forma o usuário sempre tem a “experiência” de estar na mesma página e interagir com painéis diferentes da mesma aplicação, ao invés de navegar entre diferentes páginas de um mesmo site.</p>
-<h3>Bibliotecas e o repositório npm</h3>
+<h3 id="bibliotecas-e-o-reposit%C3%B3rio-npm" tabindex="-1">Bibliotecas e o repositório npm <a class="heading-anchor" href="#bibliotecas-e-o-reposit%C3%B3rio-npm">🔗</a></h3>
 <p>Além das frameworks, é bem comum utilizarmos bibliotecas ou “pacotes” durante o desenvolvimento. Assim como o Gradle no Java, o pip no Python e o Gems no Ruby, o JavaScript também tem seu gerenciador de pacotes, o npm.</p>
 <p>A principal funcionalidade do npm (Node Package Manager) é instalar, remover e gerenciar os pacotes de um projeto gerenciado por ele. Pacotes são armazenados dentro do Repositório do npm, que atualmente conta com pouco mais de 1 milhão e 800 mil pacotes. Esses pacotes incluem desde coisas simples como bibliotecas que te dizem se algo é um número e se ele é par ou ímpar até frameworks completas e programas de linha de comando poderosíssimas (e até mesmo frameworks para criar programas de linha de comando!)</p>
 <p>Qualquer um pode contribuir com o repositório e utilizar do repositório, o que torna ele uma ferramenta incrivelmente poderosa para quem quer fazer parte da comunidade JS de forma fácil.</p>
-<h3>Server-side e Node.js</h3>
+<h3 id="server-side-e-node.js" tabindex="-1">Server-side e Node.js <a class="heading-anchor" href="#server-side-e-node.js">🔗</a></h3>
 <p>Falando em npm, o que é o Node.js afinal?</p>
 <p>Em 2009, um ano após o lançamento da V8, Ryan Dahl apresentou o Node.js em uma conferência como uma alternativa ao Apache HTTP Server. O Node é um runtime de JS independente, baseado no motor V8 do Chrome que roda nos servidores, e possibilita a criação de servidores web de alta performance sem utilizar threading manual.</p>
 <p>Isso é gerenciado por meio da estrutura de controle de chamadas assíncronas não bloqueantes chamada Event Loop, que despacha chamadas assíncronas para serem processadas por uma thread no plano de fundo, que retornam para uma fila para serem processadas num momento futuro enquanto a main thread realiza processamento síncrono bloqueante no Event Loop.</p>
-<h3>TypeScript</h3>
+<h3 id="typescript" tabindex="-1">TypeScript <a class="heading-anchor" href="#typescript">🔗</a></h3>
 <p>Tudo o que falamos até agora foi baseado no JavaScript, que é uma linguagem dinâmica e fracamente tipada. O problema é que isso dá abertura para possíveis problemas que podem ser evitados com um sistema estático de tipagem, e é isso que o TypeScript oferece: Tipagem estática no código, com tipos explicitamente definidos.</p>
 <p>Além de alguns benefícios óbvios que tipagem estática oferece, o TypeScript tem algumas cartas na manga que tornam ele uma ferramenta poderosíssima para alguns problemas, como Template Types, por exemplo, que usam template strings para criar tipos exponencialmente complexos de forma automática baseados em combinações de blocos simples.</p>
-<h2>Futuro — Vida eterna?</h2>
+<h2 id="futuro-%E2%80%94-vida-eterna%3F" tabindex="-1">Futuro — Vida eterna? <a class="heading-anchor" href="#futuro-%E2%80%94-vida-eterna%3F">🔗</a></h2>
 <p>O ecossistema atual é bem completo, amplamente utilizado e não carece de variedade nos tipos de problemas que você enfrenta no dia a dia, mas sabemos que JS é uma linguagem viva, baseada num padrão em constante evolução. Sendo assim, quais vislumbres temos do futuro atualmente?</p>
-<h3>ECMAScript Anual</h3>
+<h3 id="ecmascript-anual" tabindex="-1">ECMAScript Anual <a class="heading-anchor" href="#ecmascript-anual">🔗</a></h3>
 <p>Junto com o lançamento do ES6, a ECMA International mudou a forma de criar novas edições do padrão. Tecnicamente falando, o ES6 na verdade é o ES2016, pois com ele o Comitê Técnico 39 — Um grupo seleto de programadores, implementadores, acadêmicos e vários outros responsáveis por aprovar as propostas para a especificação do ECMAScript — apresentou o esquema de lançamentos anuais da especificação.</p>
 <p>Não só passamos a anualmente ter novas funcionalidades na linguagem, mas a especificação passou a ser totalmente aberta a propostas de extensão por meio de um processo de inscrição na EMCA International e repositórios no GitHub.</p>
 <p>Algumas das funcionalidades que estão em estágio 3 (o último estágio antes de uma funcionalidade ser considerada finalizada) incluem Módulos JSON, o objeto Temporal, Decoradores de Classe e agrupamento de elementos num array.</p>
-<h3>Server Side Rendering</h3>
+<h3 id="server-side-rendering" tabindex="-1">Server Side Rendering <a class="heading-anchor" href="#server-side-rendering">🔗</a></h3>
 <p>Desde o surgimento da linguagem performance sempre foi um ponto importantíssimo. Com avanços progressivamente mais refinados em motores como a V8 da Google ou o SpiderMonkey da Mozilla, a linguagem chegou num ponto extremamente otimizado atualmente.</p>
 <p>Porém, com o passar dos anos surgiram novas métricas de performance que passamos a medir, métricas que levam em consideração a experiência do usuário, como o CLS, que mede o quanto uma página muda de formato antes de estabilizar no seu layout final.</p>
 <p>Atualmente, uma das técnicas mais utilizadas para garantir uma boa performance nessas novas métricas é a <strong>Renderização Server-side</strong>, ou SSR. Com o SSR, você desenvolve sites como fazíamos em PHP ou Ruby, projetando páginas que são servidas diretamente pelo servidor, e são exibidas para o usuário muito mais rápido.</p>
 <p>Isso permite que o usuário acessando o site tenha um produto totalmente finalizado muito mais rápido, já que a página não é construída no navegador antes de ser exibida, mas sim construída no servidor e exibida para o usuário em sua forma final.</p>
 <p>Outra técnica é a <strong>Geração de Sites Estáticos</strong>, ou SSG. Sites estáticos? Mas a ideia de 27 anos atrás não era deixar as páginas dinâmicas? Sim! Só que dinamismo invariavelmente custa performance, e correndo o risco de ter um martelo e só enxergar pregos, nem todas as páginas precisam de dinamismo. Uma página da Wikipédia, por exemplo, é muito bem atendida por uma página totalmente estática.</p>
 <p>Por último temos a <strong>Regeneração Estática Incremental</strong>, o ISR, que combina o melhor de dois mundos. O SSR renderiza as páginas sob demanda, o SSG gera páginas estáticas, o ISR te permite gerar páginas estáticas baseadas em dados dinâmicos, que são periodicamente invalidados do cache e atualizados para uma nova tarefa de renderização de páginas em massa.</p>
-<h3>Web3 e DApps</h3>
+<h3 id="web3-e-dapps" tabindex="-1">Web3 e DApps <a class="heading-anchor" href="#web3-e-dapps">🔗</a></h3>
 <p>Recentemente surgiu um movimento que fala sobre a Web 3.0, uma “nova versão da Internet” baseada em tecnologias e conceitos de blockchain, como criptomoedas e descentralização. Não entrando nos aspectos socioeconômicos do assunto, prefiro falar do impacto que isso pode ter nas nossas vidas como desenvolvedores Web.</p>
 <p>Montado em cima do conceito da Web3, há o conceito dos DApps, Apps Distribuidos. DApps são aplicações que rodam de forma autônoma em uma blockchain, por meio do conceito de Contratos Inteligentes, os Smart Contracts, e não são de nenhuma propriedade individual, distribuindo tokens que representam sua possessão de acordo com o algoritmo determinado pelo código.</p>
 <p>Como diz o ditado, “numa corrida do ouro, venda pás”, e por mais que eu pessoalmente não seja muito fã de cripto e tudo mais, deem uma olhada no Solidity, uma linguagem de alto nível inspirada pelo C++, Python e JavaScript para implementação de Contratos Inteligentes na blockchain Ethereum.</p>
-<h3>WebAssembly</h3>
+<h3 id="webassembly" tabindex="-1">WebAssembly <a class="heading-anchor" href="#webassembly">🔗</a></h3>
 <p>Por último mas de forma alguma menos importante, temos o WebAssembly.</p>
 <p>Se em um lado do espectro da performance do JS nós temos aplicações “super velozes” como Angular, na extremidade do outro lado temos o WebAssembly, um <strong>formato de instruções binárias</strong> <strong>pra uma máquina virtual baseada em pilha</strong>.</p>
 <p>Em termos leigos, WebAssembly oferece uma plataforma para qual você pode compilar suas aplicações de alta performance escritas em C/C++, Rust, ou qualquer outra linguagem que ofereça um compilador com WebAssembly como plataforma alvo.</p>
 <p>Algumas aplicações estupidamente pesadas que rodam em WebAssembly incluem o Figma, AutoCAD Web e até jogos feitos na Unity ou Unreal Engine 4 (a partir da versão 4.18)</p>
-<h2>Referências</h2>
+<h2 id="refer%C3%AAncias" tabindex="-1">Referências <a class="heading-anchor" href="#refer%C3%AAncias">🔗</a></h2>
 <ul>
 <li><a href="https://webassembly.org/">Mais informações sobre WebAssembly</a></li>
 <li><a href="https://docs.soliditylang.org/en/v0.8.13/">Site da linguagem Solidity para Smart Contracts</a></li>
