@@ -58,6 +58,11 @@
   font-weight: normal;
 }
 
+*::selection {
+  color: var(--white);
+  background-color: var(--red-dim);
+}
+
 * * {
   background-color: transparent;
 }

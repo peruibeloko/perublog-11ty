@@ -215,4 +215,12 @@ footer > a:hover {
     font-size: 0.9rem;
     max-width: 100%;
   }
+
+  blockquote {
+    width: 100%;
+  }
+
+  blockquote::before, blockquote::after {
+    display: none;
+  }
 }
