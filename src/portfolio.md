@@ -13,6 +13,15 @@ styles: portfolio
 <main>
 <article>
 
+## [keylogger](https://peruibeloko.github.io/keylogger/)
+
+Uma ferramenta para visualizar os dados de eventos do teclado de forma simples
+
+- [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+
+</article>
+<article>
+
 ## [Time Calculator](https://peruibeloko.github.io/time-calculator/)
 
 Uma calculadora de tempo! Utiliza o objeto experimental Temporal para manipular registros de tempo e realizar aritmética simples com eles, como somar dois intervalos de tempo ou subtraír 43 minutos de 1h e 25min, por exemplo.
